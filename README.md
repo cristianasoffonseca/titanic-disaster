@@ -1,76 +1,74 @@
-# Business Intelligence & Analytics Projects
+# Titanic Survival Analysis: Machine Learning + Power BI
 
-This repository contains Business Intelligence and Analytics work developed using **Power BI** and **Python**, covering data modeling, reporting, and predictive analytics.
+This repository presents an end-to-end analytics project based on the Titanic dataset. It combines a Python machine learning workflow with a Power BI report to explore survival patterns and evaluate model performance.
 
----
-
-## Project Structure
+## Repository Structure
 
 ```text
-├── MachineLearning.pbix
-├── titanic-cf.ipynb
-│
-├── data/
-│
-├── images/
-│
-└── README.md
+.
+|-- MachineLearning.pbix
+|-- titanic-cf.ipynb
+|-- data/
+|   |-- gender_submission.csv
+|   |-- submission.csv
+|   |-- titanic_test_processed.csv
+|   `-- titanic_train_processed.csv
+|-- images/
+|   |-- FactorsSurvival.png
+|   |-- FactorsSurvivalModel.png
+|   `-- TitanicKaggleNotebook.png
+`-- README.md
 ```
 
----
+## Project Components
 
-## 1. Machine Learning – Titanic Survival Prediction
+### 1. Python Notebook: Titanic Survival Prediction
 
-**Notebook:** `titanic-cf.ipynb`
+**File:** `titanic-cf.ipynb`
 
-A complete machine learning workflow implemented in Python to predict passenger survival in the Titanic dataset.
+The notebook includes a full machine learning pipeline to predict passenger survival.
 
-### Work performed
-- Exploratory data analysis and data cleaning.
-- Feature engineering (age groups, family size, travel status).
-- Encoding of categorical variables.
-- Training and evaluation of classification models.
-- Hyperparameter tuning and model comparison.
-- Generation of prediction outputs for Kaggle submission.
+Key tasks:
+- Performed exploratory data analysis and data cleaning.
+- Created features such as age group, family size, and travel status.
+- Encoded categorical variables for model training.
+- Trained and evaluated classification models.
+- Tuned hyperparameters and compared model results.
+- Generated prediction output for Kaggle-style submission.
 
-### Notebook Overview
+Notebook preview:
 ![Titanic Notebook](images/TitanicKaggleNotebook.png)
 
----
-
-## 2. Machine Learning Results Reporting
+### 2. Power BI Report: Model Results and Survival Insights
 
 **File:** `MachineLearning.pbix`
 
-A Power BI report developed to analyse and visualise the machine learning predictions.
+The Power BI report visualizes prediction outputs and highlights survival trends.
 
-### Work performed
-- Imported processed datasets and prediction results.
-- Built visuals comparing predicted survival versus actual survival.
-- Analysed survival patterns by:
-  - Gender
-  - Age group
-  - Passenger class
-  - Embarkation port
-  - Travel status (alone vs not alone)
-- Added interactive filtering by passenger class.
+Key tasks:
+- Loaded processed datasets and model prediction outputs.
+- Built visuals comparing predicted survival vs. actual outcomes.
+- Analyzed survival patterns by gender, age group, class, embarkation port, and travel status.
+- Added interactive filters to support dynamic analysis.
 
-### Survival Analysis
+Report visuals:
 
 **Factors Influencing Survival**  
 ![Survival Factors](images/FactorsSurvival.png)
 
-**Model vs Actual Survival Comparison**  
+**Predicted vs. Actual Survival**  
 ![Survival Model Comparison](images/FactorsSurvivalModel.png)
 
----
+## Tools and Technologies
 
-## Tools & Technologies
-- Power BI Desktop  
-- Python (Jupyter Notebook)  
-- pandas, numpy, scikit-learn, matplotlib, seaborn
-
----
+- Power BI Desktop
+- Python (Jupyter Notebook)
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
 
 ## Author
+
 Cristiana Fonseca
